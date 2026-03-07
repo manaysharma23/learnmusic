@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#Learn Piano {background-color: green;}
+#Premium  {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('Learn Piano', this, 'green')>Learn Piano</button>
+<button class="tablink" onclick="openPage('Premium', this, 'blue')">Premium </button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tablink">
+  <h3>Home</h3>
+ 
+</div>
+
+<div id="Learn Piano" class="tablink">
+  <h3>Learn Piano </h3>
+  <p> To Learn Piano , first we should be patient .
+  <br>
+  Step 1  -  You should lern the scale .
+  You see on the C 3 of the piano you have a label C3 .
+  By pressing all the white lower keys is the C scale .<br>
+  There are many scales in the piano and you can learn them .<br>
+  The Best way to learn piano scales is to change the transpos and hear and understand. 
+  
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+Step 2  -  By placing correct fingers on correct keys will make you soon a perfect in playing piano .
+For more learning take premium or watch our youTUBE channel SIKHO SARAL .
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+Step 3 To learn songs , it will need trial and error so ,be Patient.
+<p> Don ' t worry  soon you will be a perfect in plaaying piano.
+ 
+
+
+
+
+
+
+
+
+-
+
+
+
+
+
+
+  </p> 
+</div>
+
+<div id="Premium" class="tablink">
+  <h3>Premium</h3>
+  <p>This option is currently not usable .</p>
+  
+  
+  
+</div>
+
+<div id="About" class="tablink">
+  <h3>About</h3>
+  <p>We teach piano to children and adults who are determined , hardworking and really want to learn</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tablink");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
